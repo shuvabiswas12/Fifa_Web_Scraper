@@ -29,5 +29,3 @@ while True:
         else:
             continue
     
-
-# FAYAZ BIN SALAM
