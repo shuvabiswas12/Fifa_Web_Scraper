@@ -19,17 +19,17 @@ class Extract:
             self.designSheet()
 
             j = 0
-            k = 0
+            col = 0
             for team_name in self.teams[group_name]:
                 players = self.data.players_by_country[team_name]
 
                 if i < len(self.data.coach_name):
                     coach = self.data.coach_name[i]
                     if j < 4:
-                        self.dataToSheet(group_name, team_name, coach, players, k, k+1)
+                        self.dataToSheet(group_name, team_name, coach, players, col, col+1)
                         j+=1
                     i+=1
-                k+=3
+                col+=3
         self.workbook.close()
 
 
