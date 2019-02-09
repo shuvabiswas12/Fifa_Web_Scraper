@@ -1,10 +1,13 @@
 
-import sys
+import sys, os
 from fifa_script.extract import Extract
 from fifa_script.fifa import Crawl, GetData
 
-# crawlObject = Crawl()
-# crawlObject.getHtmlPage_request()
+if not os.path.exists("F:\\Python Projects\\Fifa Web Scraper\\html_page\\fifa.txt"):
+    crawlObject = Crawl()
+    crawlObject.getHtmlPage_request()
+else:
+    print("True")
 
 while True:
 
